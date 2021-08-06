@@ -3,10 +3,10 @@
   maintainer: sdsc.edu
   url: https://firemap.sdsc.edu
 
-- name: Smoke Map (Grass Valley)
+- name: Smoke Map (centered on White Cloud Lat/Long)
   description: AirNow from US EPA
   maintainer: EPA
-  url: https://fire.airnow.gov/?lat=38.401110000000074&lng=-123.09456999999998&zoom=12#
+  url: https://fire.airnow.gov/?lat=39.321342&lng=-120.864174&zoom=12#
 
 - name: Inciweb
   description: National Incident Information System
