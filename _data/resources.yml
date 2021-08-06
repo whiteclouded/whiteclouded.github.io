@@ -12,3 +12,8 @@
   description: National Incident Information System
   maintainer: National Fire Service
   url: https://inciweb.nwcg.gov/
+
+- name: Fire Scanner radio
+  description: Live radio feeds from fire/OES
+  maintainer: Broadcastify
+  url: https://www.broadcastify.com/listen/ctid/211
