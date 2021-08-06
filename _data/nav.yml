@@ -1,0 +1,14 @@
+- name: Map
+  icon: fas fa-map
+
+- name: Blog
+  icon: fas fa-pen-nib
+
+- name: Dashboard
+  icon: fas fa-tachometer-alt
+
+- name: Notification
+  icon: fas fa-bell
+
+- name: Resources
+  icon: fas fa-hands

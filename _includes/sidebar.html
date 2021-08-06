@@ -1,0 +1,40 @@
+<div class="sidebar-wrapper">
+  <ul class="nav">
+
+    {% if navgroup == page.navgroup %}
+
+    {% if navgroup == "dashboard" %}
+      <li class="active"><a href="{{ BASE_PATH }}/index.html" class="active"><i class="fas fa-tachometer-alt"></i><p>Dashboard</p></a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}/index.html"><i class="fas fa-tachometer-alt"></i><p>Dashboard</p></a></li>
+    {% endif %}
+<!--
+    {% if navgroup == "maps" %}
+     <li class="active"><a href="{{ BASE_PATH }}/maps/" ><i class="fas fa-map"></i><p>Maps</p></a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}/maps/" ><i class="fas fa-map"></i><p>Maps</p></a></li>
+    {% endif %}
+-->
+
+    {% if navgroup == "resources" %}
+      <li class="active"><a href="{{ BASE_PATH }}/resources/" class="active"><i class="fas fa-table"></i><p>Resources</p></a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}/resources/"><i class="fas fa-table"></i><p>Resources</p></a></li>
+    {% endif %}
+
+    {% if navgroup == "aqi" %}
+      <li class="active"><a href="{{ BASE_PATH }}/aqi/" class="active"><i class="fas fa-lungs"></i><p>Air Quality</p></a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}/aqi/"><i class="fas fa-lungs"></i><p>Air Quality</p></a></li>
+    {% endif %}
+
+    {% if navgroup == "blog" %}
+      <li class="active"><a href="{{ BASE_PATH }}/blog/" class="active"><i class="fas fa-pen-nib"></i><p>Blog</p></a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}/blog/"><i class="fas fa-pen-nib"></i><p>Blog</p></a></li>
+    {% endif %}
+
+    {% endif %}
+
+  </ul>
+</div><!-- end sidebar -->

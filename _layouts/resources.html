@@ -1,0 +1,82 @@
+<!--
+=========================================================
+* Paper Dashboard 2 - v2.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      {%- include logo.html -%}
+      {% assign navgroup = page.navgroup%}
+      {%- include sidebar.html -%}
+    </div>
+    <div class="main-panel" style="height: 100vh;">
+      <!-- Navbar -->
+      {%- include navbar.html -%}
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card">
+              <div class="card-header">
+                <h4 class="card-title"> Fire Resources</h4>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead class=" text-primary">
+                      <th>
+                        Name
+                      </th>
+                      <th>
+                        Description
+                      </th>
+                      <th>
+                        Maintainer
+                      </th>
+                    </thead>
+                    <tbody>
+                      {% for res in site.data.resources %}
+                      <tr>
+                        <td>
+                        <a href="{{ res.url }}""  target="_blank">{{ res.name }}</a>
+                        </td>
+                        <td>
+                          {{ res.description }}
+                        </td>
+                        <td>
+                          {{ res.maintainer }}
+                        </td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {%- include footer.html -%}
+    </div>
+  </div>
+
+</body>
+
+</html>
