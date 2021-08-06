@@ -1,0 +1,64 @@
+<!--
+=========================================================
+* Paper Dashboard 2 - v2.0.1
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/paper-dashboard-2
+* Copyright 2020 Creative Tim (https://www.creative-tim.com)
+
+Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+-->
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      {%- include logo.html -%}
+      {% assign navgroup = page.navgroup%}
+      {%- include sidebar.html -%}
+    </div>
+    <div class="main-panel" style="height: 100vh;">
+      <!-- Navbar -->
+      {%- include navbar.html -%}
+      <!-- End Navbar -->
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card ">
+              <div class="card-header ">
+                <h3>{{page.title}}</h3>
+              </div>
+              <div class="card-body ">
+                {%- include aqi.html -%}
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card ">
+              <div class="card-header ">
+                <h3>Wind Information</h3>
+              </div>
+              <div class="card-body ">
+                <p>For Wind Direction, see <a href="https://firemap.sdsc.edu" target="_blank">WIFIRE</a>. The team has posted <a href="https://www.youtube.com/channel/UCAiJsj7D0hbjoRyWC959RSg" target="_blank">tutorials</a> on how to use this visualization on YouTube.</p>
+                <p>Smoke Maps are available from EPA: <a href="https://fire.airnow.gov/?lat=38.401110000000074&lng=-123.09456999999998&zoom=12#" target="_blank">AirNow</a>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {%- include footer.html -%}
+    </div>
+  </div>
+
+</body>
+
+</html>
