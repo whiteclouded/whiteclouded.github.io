@@ -17,3 +17,8 @@
   description: Live radio feeds from fire/OES
   maintainer: Broadcastify
   url: https://www.broadcastify.com/listen/ctid/211
+
+- name: FireSmoke.ca
+  description: Fire/Smoke forecasts
+  maintainer: UBC Weather Forecast Research Team
+  url: http://firesmoke.ca/forecasts/current/
