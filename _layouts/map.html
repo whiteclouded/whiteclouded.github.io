@@ -28,19 +28,23 @@ Coded by www.creative-tim.com
       <!-- Navbar -->
       {%- include navbar.html -%}
       <!-- End Navbar -->
+
       <div class="content">
         <div class="row">
           <div class="col-md-12">
             <div class="card ">
               <div class="card-header ">
-                {{page.title}} from <a href="https://firemap.sdsc.edu">WIFIRE</a> (wind, updated 7 Aug 12:03 PDT)
+                Windy Current Conditions
               </div>
               <div class="card-body ">
-                <img src="{{ BASE_PATH }}/assets/img/posts/20210807095535_wind.png" >
+                <iframe width="650" height="450"
+                src="https://embed.windy.com/embed2.html?lat=39.224&lon=-121.035&detailLat=41.257&detailLon=-73.211&width=650&height=450&zoom=10&level=surface&overlay=wind&product=ecmwf&menu=&message=true&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=default&metricTemp=%C2%B0F&radarRange=-1"
+                frameborder="0"></iframe>
               </div>
             </div>
           </div>
         </div>
+<!--
         <div class="row">
           <div class="col-md-12">
             <div class="card ">
@@ -54,9 +58,7 @@ Coded by www.creative-tim.com
           </div>
         </div>
       </div>
-
-
-
+    -->
 
       {%- include footer.html -%}
     </div>
