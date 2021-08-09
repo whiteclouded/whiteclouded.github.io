@@ -22,3 +22,18 @@
   description: Fire/Smoke forecasts
   maintainer: UBC Weather Forecast Research Team
   url: http://firesmoke.ca/forecasts/current/
+
+- name: SARTopo
+  description: Search and Rescue Topographic Map
+  maintainer: CALtopo, backcounty/SAR planning tool
+  url: https://sartopo.com/map.html?#ll=39.13885,-121.00994&z=12&b=mbt&a=modis_mp%2Cwxd_wspd-01
+
+- name: FIRM
+  description: Fire Info Resource Management Tool
+  maintainer: NASA
+  url: https://firms2.modaps.eosdis.nasa.gov/map/#t:adv;d:2021-07-23..2021-07-24;l:country-outline;@-120.9,39.1,11z
+
+- name: AlertWildfire
+  description: Fire Camera (Jones Rirdge)
+  maintainer: UNR, UCSD, UOregon
+  url: http://www.alertwildfire.org/shastamodoc/index.html?camera=Axis-JonesRidge&v=7a7f1a7  
